@@ -1,0 +1,575 @@
+{
+    "request_id": "00000000-0000-0000-0000-000000000001",
+  "duration_ms": 18420,
+    "layouts": [
+      {
+        "id": "variant-1",
+      "family": "L-shaped",
+      "score": 0.91,
+        "violations": [],
+  
+        "environment": {
+          "floor": {
+            "points": [
+              { "x": 0,    "y": 0,    "z": 0 },
+              { "x": 4200, "y": 0,    "z": 0 },
+              { "x": 4200, "y": 3000, "z": 0 },
+              { "x": 0,    "y": 3000, "z": 0 }
+            ]
+          },
+          "wall": [
+            {
+              "name": "south_wall",
+              "points": [
+                { "x": 0,    "y": 0, "z": 0    },
+                { "x": 4200, "y": 0, "z": 0    },
+                { "x": 4200, "y": 0, "z": 2700 },
+                { "x": 0,    "y": 0, "z": 2700 }
+              ],
+              "dimensions":   { "height": 2700 },
+            "has_cabinets": false
+            },
+            {
+              "name": "north_wall",
+              "points": [
+                { "x": 0,    "y": 3000, "z": 0    },
+                { "x": 4200, "y": 3000, "z": 0    },
+                { "x": 4200, "y": 3000, "z": 2700 },
+                { "x": 0,    "y": 3000, "z": 2700 }
+              ],
+              "dimensions":   { "height": 2700 },
+            "has_cabinets": true
+            },
+            {
+              "name": "east_wall",
+              "points": [
+                { "x": 4200, "y": 0,    "z": 0    },
+                { "x": 4200, "y": 3000, "z": 0    },
+                { "x": 4200, "y": 3000, "z": 2700 },
+                { "x": 4200, "y": 0,    "z": 2700 }
+              ],
+              "dimensions":   { "height": 2700 },
+            "has_cabinets": true
+            },
+            {
+              "name": "west_wall",
+              "points": [
+                { "x": 0, "y": 0,    "z": 0    },
+                { "x": 0, "y": 3000, "z": 0    },
+                { "x": 0, "y": 3000, "z": 2700 },
+                { "x": 0, "y": 0,    "z": 2700 }
+              ],
+              "dimensions":   { "height": 2700 },
+              "has_cabinets": false
+            }
+          ]
+        },
+  
+        "layout": {
+          "south_wall": {
+            "is_wall":        true,
+            "position_mm":    { "x": 2100, "y": 0,    "z": 1350 },
+            "dimensions_mm":  { "width": 4200, "depth": 100, "height": 2700 },
+            "rotation_z_deg": 0
+          },
+          "north_wall": {
+            "is_wall":        true,
+            "position_mm":    { "x": 2100, "y": 3000, "z": 1350 },
+            "dimensions_mm":  { "width": 4200, "depth": 100, "height": 2700 },
+            "rotation_z_deg": 0
+          },
+          "east_wall": {
+            "is_wall":        true,
+            "position_mm":    { "x": 4200, "y": 1500, "z": 1350 },
+            "dimensions_mm":  { "width": 100, "depth": 3000, "height": 2700 },
+            "rotation_z_deg": 0
+          },
+          "west_wall": {
+            "is_wall":        true,
+            "position_mm":    { "x": 0, "y": 1500, "z": 1350 },
+            "dimensions_mm":  { "width": 100, "depth": 3000, "height": 2700 },
+            "rotation_z_deg": 0
+          },
+  
+        "south_door": {
+          "is_door":        true,
+          "anchor_wall":    "south",
+          "position_mm":    { "x": 1050, "y": 50,   "z": 1050 },
+          "dimensions_mm":  { "width": 900,  "depth": 100, "height": 2100 },
+          "rotation_z_deg": 0
+        },
+        "north_window": {
+          "is_window":      true,
+          "anchor_wall":    "north",
+          "position_mm":    { "x": 2100, "y": 2950, "z": 1500 },
+          "dimensions_mm":  { "width": 1200, "depth": 100, "height": 1200 },
+          "rotation_z_deg": 0
+        },
+
+        "corner_cabinet_1": {
+          "is_wall":        false,
+          "product_id":     "SKU-C03",
+          "position_mm":    { "x": 450,  "y": 2550, "z": 450 },
+          "rotation_z_deg": 180,
+          "anchor_wall":    "north",
+          "zone_type":      "preparation"
+        },
+          "base_cabinet_1": {
+            "is_wall":        false,
+          "product_id":     "SKU-C02",
+          "position_mm":    { "x": 1350, "y": 2700, "z": 450 },
+          "rotation_z_deg": 180,
+          "anchor_wall":    "north",
+            "zone_type":      "preparation"
+          },
+          "sink_1": {
+            "is_wall":        false,
+            "product_id":     "SKU-S01",
+          "position_mm":    { "x": 2100, "y": 2725, "z": 450 },
+          "rotation_z_deg": 180,
+          "anchor_wall":    "north",
+          "zone_type":      "cleaning"
+        },
+        "dishwasher_1": {
+          "is_wall":        false,
+          "product_id":     "SKU-A03",
+          "position_mm":    { "x": 2700, "y": 2700, "z": 425 },
+          "rotation_z_deg": 180,
+          "anchor_wall":    "north",
+            "zone_type":      "cleaning"
+          },
+        "stove_1": {
+          "is_wall":        false,
+          "product_id":     "SKU-A01",
+          "position_mm":    { "x": 3300, "y": 2700, "z": 450 },
+          "rotation_z_deg": 180,
+          "anchor_wall":    "north",
+          "zone_type":      "cooking"
+        },
+        "hood_1": {
+          "is_wall":        false,
+          "product_id":     "SKU-A05",
+          "position_mm":    { "x": 3300, "y": 2750, "z": 2300 },
+          "rotation_z_deg": 180,
+          "anchor_wall":    "north",
+          "zone_type":      "cooking"
+        },
+        "base_cabinet_2": {
+          "is_wall":        false,
+          "product_id":     "SKU-C01",
+          "position_mm":    { "x": 3900, "y": 2700, "z": 450 },
+          "rotation_z_deg": 180,
+          "anchor_wall":    "north",
+          "zone_type":      "preparation"
+        },
+        "wall_cabinet_1": {
+          "is_wall":        false,
+          "product_id":     "SKU-C06",
+          "position_mm":    { "x": 1350, "y": 2825, "z": 2050 },
+          "rotation_z_deg": 180,
+          "anchor_wall":    "north"
+        },
+        "wall_cabinet_2": {
+          "is_wall":        false,
+          "product_id":     "SKU-C05",
+          "position_mm":    { "x": 2700, "y": 2825, "z": 2050 },
+          "rotation_z_deg": 180,
+          "anchor_wall":    "north"
+        },
+        "wall_cabinet_3": {
+          "is_wall":        false,
+          "product_id":     "SKU-C05",
+          "position_mm":    { "x": 3900, "y": 2825, "z": 2050 },
+          "rotation_z_deg": 180,
+          "anchor_wall":    "north"
+        },
+          "fridge_1": {
+            "is_wall":        false,
+            "product_id":     "SKU-A02",
+          "position_mm":    { "x": 3850, "y": 650,  "z": 900 },
+          "rotation_z_deg": 90,
+          "anchor_wall":    "east",
+            "zone_type":      "cooling"
+          }
+        },
+  
+        "rationale": [
+        { "rule_id": "LAYOUT-01",  "text": "Sink centred directly under the north window (Δ=0 mm)" },
+        { "rule_id": "LAYOUT-02",  "text": "Hood centred above stove (XY Δ=0/50 mm)" },
+        { "rule_id": "WORKFLOW-01","text": "Dishwasher edge-adjacent to sink (centre-to-centre 600 mm)" },
+        { "rule_id": "WORKFLOW-02","text": "Stove kept 2100 mm from fridge (≥ 600 mm)" },
+        { "rule_id": "WORKFLOW-03","text": "Work-triangle perimeter ≈ 6.04 m (within 3.6–6.6 m)" },
+        { "rule_id": "NKBA-CL-02", "text": "1067 mm clear in front of sink" },
+        { "rule_id": "NKBA-CL-03", "text": "1067 mm clear in front of stove" },
+        { "rule_id": "NKBA-CL-04", "text": "1067 mm clear in front of fridge (east wall)" },
+        { "rule_id": "NKBA-CL-05", "text": "900×900 mm door swing reservation kept clear" }
+        ]
+      },
+  
+      {
+        "id": "variant-2",
+        "family": "single-wall",
+      "score": 0.84,
+        "violations": [],
+  
+        "environment": {
+          "floor": {
+            "points": [
+              { "x": 0,    "y": 0,    "z": 0 },
+              { "x": 4200, "y": 0,    "z": 0 },
+              { "x": 4200, "y": 3000, "z": 0 },
+              { "x": 0,    "y": 3000, "z": 0 }
+            ]
+          },
+          "wall": [
+            {
+              "name": "south_wall",
+              "points": [
+                { "x": 0,    "y": 0, "z": 0    },
+                { "x": 4200, "y": 0, "z": 0    },
+                { "x": 4200, "y": 0, "z": 2700 },
+                { "x": 0,    "y": 0, "z": 2700 }
+              ],
+              "dimensions":   { "height": 2700 },
+            "has_cabinets": false
+            },
+            {
+              "name": "north_wall",
+              "points": [
+                { "x": 0,    "y": 3000, "z": 0    },
+                { "x": 4200, "y": 3000, "z": 0    },
+                { "x": 4200, "y": 3000, "z": 2700 },
+                { "x": 0,    "y": 3000, "z": 2700 }
+              ],
+              "dimensions":   { "height": 2700 },
+            "has_cabinets": true
+            },
+            {
+              "name": "east_wall",
+              "points": [
+                { "x": 4200, "y": 0,    "z": 0    },
+                { "x": 4200, "y": 3000, "z": 0    },
+                { "x": 4200, "y": 3000, "z": 2700 },
+                { "x": 4200, "y": 0,    "z": 2700 }
+              ],
+              "dimensions":   { "height": 2700 },
+              "has_cabinets": false
+            },
+            {
+              "name": "west_wall",
+              "points": [
+                { "x": 0, "y": 0,    "z": 0    },
+                { "x": 0, "y": 3000, "z": 0    },
+                { "x": 0, "y": 3000, "z": 2700 },
+                { "x": 0, "y": 0,    "z": 2700 }
+              ],
+              "dimensions":   { "height": 2700 },
+              "has_cabinets": false
+            }
+          ]
+        },
+  
+        "layout": {
+          "south_wall": {
+            "is_wall":        true,
+            "position_mm":    { "x": 2100, "y": 0,    "z": 1350 },
+            "dimensions_mm":  { "width": 4200, "depth": 100, "height": 2700 },
+            "rotation_z_deg": 0
+          },
+          "north_wall": {
+            "is_wall":        true,
+            "position_mm":    { "x": 2100, "y": 3000, "z": 1350 },
+            "dimensions_mm":  { "width": 4200, "depth": 100, "height": 2700 },
+            "rotation_z_deg": 0
+          },
+          "east_wall": {
+            "is_wall":        true,
+            "position_mm":    { "x": 4200, "y": 1500, "z": 1350 },
+            "dimensions_mm":  { "width": 100, "depth": 3000, "height": 2700 },
+            "rotation_z_deg": 0
+          },
+          "west_wall": {
+            "is_wall":        true,
+            "position_mm":    { "x": 0, "y": 1500, "z": 1350 },
+            "dimensions_mm":  { "width": 100, "depth": 3000, "height": 2700 },
+            "rotation_z_deg": 0
+          },
+
+        "south_door": {
+          "is_door":        true,
+          "anchor_wall":    "south",
+          "position_mm":    { "x": 1050, "y": 50,   "z": 1050 },
+          "dimensions_mm":  { "width": 900,  "depth": 100, "height": 2100 },
+          "rotation_z_deg": 0
+        },
+        "north_window": {
+          "is_window":      true,
+          "anchor_wall":    "north",
+          "position_mm":    { "x": 2100, "y": 2950, "z": 1500 },
+          "dimensions_mm":  { "width": 1200, "depth": 100, "height": 1200 },
+          "rotation_z_deg": 0
+        },
+  
+          "fridge_1": {
+            "is_wall":        false,
+            "product_id":     "SKU-A02",
+          "position_mm":    { "x": 350,  "y": 2650, "z": 900 },
+          "rotation_z_deg": 180,
+          "anchor_wall":    "north",
+            "zone_type":      "cooling"
+          },
+        "base_cabinet_1": {
+            "is_wall":        false,
+          "product_id":     "SKU-C02",
+          "position_mm":    { "x": 1150, "y": 2700, "z": 450 },
+          "rotation_z_deg": 180,
+          "anchor_wall":    "north",
+          "zone_type":      "preparation"
+          },
+          "sink_1": {
+            "is_wall":        false,
+            "product_id":     "SKU-S01",
+          "position_mm":    { "x": 1900, "y": 2725, "z": 450 },
+          "rotation_z_deg": 180,
+          "anchor_wall":    "north",
+          "zone_type":      "cleaning"
+        },
+        "dishwasher_1": {
+          "is_wall":        false,
+          "product_id":     "SKU-A03",
+          "position_mm":    { "x": 2500, "y": 2700, "z": 425 },
+          "rotation_z_deg": 180,
+          "anchor_wall":    "north",
+            "zone_type":      "cleaning"
+          },
+        "stove_1": {
+          "is_wall":        false,
+          "product_id":     "SKU-A01",
+          "position_mm":    { "x": 3100, "y": 2700, "z": 450 },
+          "rotation_z_deg": 180,
+          "anchor_wall":    "north",
+          "zone_type":      "cooking"
+        },
+        "hood_1": {
+          "is_wall":        false,
+          "product_id":     "SKU-A05",
+          "position_mm":    { "x": 3100, "y": 2750, "z": 2300 },
+          "rotation_z_deg": 180,
+          "anchor_wall":    "north",
+          "zone_type":      "cooking"
+        },
+        "tall_cabinet_1": {
+            "is_wall":        false,
+          "product_id":     "SKU-C04",
+          "position_mm":    { "x": 3700, "y": 2700, "z": 1050 },
+          "rotation_z_deg": 180,
+          "anchor_wall":    "north",
+            "zone_type":      "preparation"
+        },
+        "wall_cabinet_1": {
+          "is_wall":        false,
+          "product_id":     "SKU-C06",
+          "position_mm":    { "x": 1150, "y": 2825, "z": 2050 },
+          "rotation_z_deg": 180,
+          "anchor_wall":    "north"
+        },
+        "wall_cabinet_2": {
+          "is_wall":        false,
+          "product_id":     "SKU-C05",
+          "position_mm":    { "x": 1900, "y": 2825, "z": 2050 },
+          "rotation_z_deg": 180,
+          "anchor_wall":    "north"
+        },
+        "wall_cabinet_3": {
+          "is_wall":        false,
+          "product_id":     "SKU-C05",
+          "position_mm":    { "x": 2500, "y": 2825, "z": 2050 },
+          "rotation_z_deg": 180,
+          "anchor_wall":    "north"
+          }
+        },
+  
+        "rationale": [
+        { "rule_id": "LAYOUT-01",  "text": "Sink within 200 mm of window centre (under-window placement)" },
+        { "rule_id": "LAYOUT-02",  "text": "Hood centred above stove (XY Δ=0/50 mm)" },
+        { "rule_id": "WORKFLOW-01","text": "Dishwasher edge-adjacent to sink (centre-to-centre 600 mm)" },
+        { "rule_id": "WORKFLOW-02","text": "Stove kept 2750 mm from fridge (single-wall reach-in)" },
+        { "rule_id": "WORKFLOW-03","text": "Work-triangle perimeter ≈ 5.50 m (within 3.6–6.6 m)" },
+        { "rule_id": "NKBA-CL-02", "text": "1067 mm clear in front of sink" },
+        { "rule_id": "NKBA-CL-03", "text": "1067 mm clear in front of stove" },
+        { "rule_id": "NKBA-CL-04", "text": "1067 mm clear in front of fridge (NW corner)" },
+        { "rule_id": "NKBA-CL-05", "text": "900×900 mm door swing reservation kept clear" }
+      ]
+    },
+
+    {
+      "id": "variant-5-color-showcase",
+      "family": "L-shaped",
+      "score": 0.93,
+      "violations": [],
+
+      "environment": {
+        "floor": {
+          "points": [
+            { "x": 0,    "y": 0,    "z": 0 },
+            { "x": 4200, "y": 0,    "z": 0 },
+            { "x": 4200, "y": 3000, "z": 0 },
+            { "x": 0,    "y": 3000, "z": 0 }
+          ]
+        },
+        "wall": [
+          { "name": "south_wall", "points": [ { "x": 0, "y": 0, "z": 0 }, { "x": 4200, "y": 0, "z": 0 }, { "x": 4200, "y": 0, "z": 2700 }, { "x": 0, "y": 0, "z": 2700 } ], "dimensions": { "height": 2700 }, "has_cabinets": false },
+          { "name": "north_wall", "points": [ { "x": 0, "y": 3000, "z": 0 }, { "x": 4200, "y": 3000, "z": 0 }, { "x": 4200, "y": 3000, "z": 2700 }, { "x": 0, "y": 3000, "z": 2700 } ], "dimensions": { "height": 2700 }, "has_cabinets": true  },
+          { "name": "east_wall",  "points": [ { "x": 4200, "y": 0, "z": 0 }, { "x": 4200, "y": 3000, "z": 0 }, { "x": 4200, "y": 3000, "z": 2700 }, { "x": 4200, "y": 0, "z": 2700 } ], "dimensions": { "height": 2700 }, "has_cabinets": true  },
+          { "name": "west_wall",  "points": [ { "x": 0, "y": 0, "z": 0 }, { "x": 0, "y": 3000, "z": 0 }, { "x": 0, "y": 3000, "z": 2700 }, { "x": 0, "y": 0, "z": 2700 } ], "dimensions": { "height": 2700 }, "has_cabinets": false }
+        ]
+      },
+
+      "layout": {
+        "south_wall": { "is_wall": true, "position_mm": { "x": 2100, "y": 0,    "z": 1350 }, "dimensions_mm": { "width": 4200, "depth": 100, "height": 2700 }, "rotation_z_deg": 0 },
+        "north_wall": { "is_wall": true, "position_mm": { "x": 2100, "y": 3000, "z": 1350 }, "dimensions_mm": { "width": 4200, "depth": 100, "height": 2700 }, "rotation_z_deg": 0 },
+        "east_wall":  { "is_wall": true, "position_mm": { "x": 4200, "y": 1500, "z": 1350 }, "dimensions_mm": { "width": 100,  "depth": 3000, "height": 2700 }, "rotation_z_deg": 0 },
+        "west_wall":  { "is_wall": true, "position_mm": { "x": 0,    "y": 1500, "z": 1350 }, "dimensions_mm": { "width": 100,  "depth": 3000, "height": 2700 }, "rotation_z_deg": 0 },
+
+        "south_door":   { "is_door": true,   "anchor_wall": "south", "position_mm": { "x": 1050, "y": 50,   "z": 1050 }, "dimensions_mm": { "width": 900,  "depth": 100, "height": 2100 }, "rotation_z_deg": 0 },
+        "north_window": { "is_window": true, "anchor_wall": "north", "position_mm": { "x": 2100, "y": 2950, "z": 1500 }, "dimensions_mm": { "width": 1200, "depth": 100, "height": 1200 }, "rotation_z_deg": 0 },
+
+        "blind_corner_1":   { "is_wall": false, "product_id": "SKU-C11", "position_mm": { "x": 450,  "y": 2550, "z": 450  }, "rotation_z_deg": 180, "anchor_wall": "north", "zone_type": "preparation" },
+        "base_oak_1":       { "is_wall": false, "product_id": "SKU-C07", "position_mm": { "x": 1125, "y": 2700, "z": 450  }, "rotation_z_deg": 180, "anchor_wall": "north", "zone_type": "preparation" },
+        "base_walnut_1":    { "is_wall": false, "product_id": "SKU-C08", "position_mm": { "x": 1725, "y": 2700, "z": 450  }, "rotation_z_deg": 180, "anchor_wall": "north", "zone_type": "preparation" },
+        "sink_1":           { "is_wall": false, "product_id": "SKU-S01", "position_mm": { "x": 2400, "y": 2725, "z": 450  }, "rotation_z_deg": 180, "anchor_wall": "north", "zone_type": "cleaning"    },
+        "dishwasher_slim":  { "is_wall": false, "product_id": "SKU-A08", "position_mm": { "x": 2925, "y": 2700, "z": 425  }, "rotation_z_deg": 180, "anchor_wall": "north", "zone_type": "cleaning"    },
+        "base_drawer_1":    { "is_wall": false, "product_id": "SKU-C10", "position_mm": { "x": 3450, "y": 2700, "z": 450  }, "rotation_z_deg": 180, "anchor_wall": "north", "zone_type": "preparation" },
+        "oven_75_1":        { "is_wall": false, "product_id": "SKU-A06", "position_mm": { "x": 3900, "y": 2700, "z": 750  }, "rotation_z_deg": 180, "anchor_wall": "north", "zone_type": "cooking"     },
+        "microwave_1":      { "is_wall": false, "product_id": "SKU-A07", "position_mm": { "x": 3900, "y": 2800, "z": 1500 }, "rotation_z_deg": 180, "anchor_wall": "north", "zone_type": "cooking"     },
+
+        "wall_cream_1":     { "is_wall": false, "product_id": "SKU-C12", "position_mm": { "x": 1125, "y": 2825, "z": 2050 }, "rotation_z_deg": 180, "anchor_wall": "north" },
+        "wall_forest_1":    { "is_wall": false, "product_id": "SKU-C13", "position_mm": { "x": 1725, "y": 2825, "z": 2050 }, "rotation_z_deg": 180, "anchor_wall": "north" },
+        "wall_glass_1":     { "is_wall": false, "product_id": "SKU-C16", "position_mm": { "x": 2400, "y": 2825, "z": 2050 }, "rotation_z_deg": 180, "anchor_wall": "north" },
+        "wall_open_shelf_1":{ "is_wall": false, "product_id": "SKU-C15", "position_mm": { "x": 2925, "y": 2850, "z": 2050 }, "rotation_z_deg": 180, "anchor_wall": "north" },
+        "wall_gray_1":      { "is_wall": false, "product_id": "SKU-C14", "position_mm": { "x": 3600, "y": 2825, "z": 2050 }, "rotation_z_deg": 180, "anchor_wall": "north" },
+
+        "fridge_1":         { "is_wall": false, "product_id": "SKU-A02", "position_mm": { "x": 3850, "y": 650,  "z": 900  }, "rotation_z_deg": 90,  "anchor_wall": "east",  "zone_type": "cooling"     }
+      },
+
+      "rationale": [
+        { "rule_id": "COLOR-SHOWCASE", "text": "Mixes 5 base colors (navy / oak / walnut / matte black / oven stainless) and 5 wall colors (cream / forest / terracotta glass / sage open-shelf / soft gray)" },
+        { "rule_id": "WORKFLOW-01",     "text": "Slim 450 mm dishwasher edge-adjacent to sink (centre-to-centre 525 mm)" },
+        { "rule_id": "LAYOUT-02",       "text": "Microwave stacked above 750 mm built-in oven (graphite over stainless)" }
+      ]
+    },
+
+    {
+      "id": "variant-3-error-shrunk",
+      "family": "wrong-input-demo (shrunk dims)",
+      "score": 0.0,
+      "violations": [
+        { "rule_id": "DIM-ERROR",  "text": "fridge_1 declared 350×350×900, catalog SKU-A02 is 700×700×1800" },
+        { "rule_id": "DIM-ERROR",  "text": "stove_1 declared 300×300×400, catalog SKU-A01 is 600×600×900" },
+        { "rule_id": "DIM-ERROR",  "text": "sink_1 declared 300×300×400, catalog SKU-S01 is 600×550×900" },
+        { "rule_id": "DIM-ERROR",  "text": "dishwasher_1 declared 350×350×500, catalog SKU-A03 is 600×600×850" },
+        { "rule_id": "DIM-ERROR",  "text": "tall_cabinet_1 declared 300×300×500, catalog SKU-C04 is 600×600×2100" },
+        { "rule_id": "DIM-ERROR",  "text": "corner_cabinet_1 declared 450×450×500, catalog SKU-C03 is 900×900×900" },
+        { "rule_id": "DIM-ERROR",  "text": "base_cabinet_1 declared 300×300×500, catalog SKU-C01 is 600×600×900" },
+        { "rule_id": "DIM-ERROR",  "text": "hood_1 declared 250×250×300, catalog SKU-A05 is 600×500×400" },
+        { "rule_id": "OVERLAP",    "text": "Adjacent items overlap by 100–250 mm once catalog dims are honoured" }
+      ],
+
+      "environment": {
+        "floor": {
+          "points": [
+            { "x": 0,    "y": 0,    "z": 0 },
+            { "x": 4200, "y": 0,    "z": 0 },
+            { "x": 4200, "y": 3000, "z": 0 },
+            { "x": 0,    "y": 3000, "z": 0 }
+          ]
+        },
+        "wall": [
+          { "name": "south_wall", "points": [ { "x": 0, "y": 0, "z": 0 }, { "x": 4200, "y": 0, "z": 0 }, { "x": 4200, "y": 0, "z": 2700 }, { "x": 0, "y": 0, "z": 2700 } ], "dimensions": { "height": 2700 }, "has_cabinets": false },
+          { "name": "north_wall", "points": [ { "x": 0, "y": 3000, "z": 0 }, { "x": 4200, "y": 3000, "z": 0 }, { "x": 4200, "y": 3000, "z": 2700 }, { "x": 0, "y": 3000, "z": 2700 } ], "dimensions": { "height": 2700 }, "has_cabinets": true },
+          { "name": "east_wall",  "points": [ { "x": 4200, "y": 0, "z": 0 }, { "x": 4200, "y": 3000, "z": 0 }, { "x": 4200, "y": 3000, "z": 2700 }, { "x": 4200, "y": 0, "z": 2700 } ], "dimensions": { "height": 2700 }, "has_cabinets": false },
+          { "name": "west_wall",  "points": [ { "x": 0, "y": 0, "z": 0 }, { "x": 0, "y": 3000, "z": 0 }, { "x": 0, "y": 3000, "z": 2700 }, { "x": 0, "y": 0, "z": 2700 } ], "dimensions": { "height": 2700 }, "has_cabinets": false }
+        ]
+      },
+
+      "layout": {
+        "south_wall": { "is_wall": true, "position_mm": { "x": 2100, "y": 0,    "z": 1350 }, "dimensions_mm": { "width": 4200, "depth": 100, "height": 2700 }, "rotation_z_deg": 0 },
+        "north_wall": { "is_wall": true, "position_mm": { "x": 2100, "y": 3000, "z": 1350 }, "dimensions_mm": { "width": 4200, "depth": 100, "height": 2700 }, "rotation_z_deg": 0 },
+        "east_wall":  { "is_wall": true, "position_mm": { "x": 4200, "y": 1500, "z": 1350 }, "dimensions_mm": { "width": 100,  "depth": 3000, "height": 2700 }, "rotation_z_deg": 0 },
+        "west_wall":  { "is_wall": true, "position_mm": { "x": 0,    "y": 1500, "z": 1350 }, "dimensions_mm": { "width": 100,  "depth": 3000, "height": 2700 }, "rotation_z_deg": 0 },
+
+        "south_door":   { "is_door": true,   "anchor_wall": "south", "position_mm": { "x": 1050, "y": 50,   "z": 1050 }, "dimensions_mm": { "width": 900,  "depth": 100, "height": 2100 }, "rotation_z_deg": 0 },
+        "north_window": { "is_window": true, "anchor_wall": "north", "position_mm": { "x": 2100, "y": 2950, "z": 1500 }, "dimensions_mm": { "width": 1200, "depth": 100, "height": 1200 }, "rotation_z_deg": 0 },
+
+        "fridge_1":          { "is_wall": false, "product_id": "SKU-A02", "position_mm": { "x": 400,  "y": 2650, "z": 900  }, "dimensions_mm": { "width": 350, "depth": 350, "height": 900 }, "rotation_z_deg": 180, "anchor_wall": "north", "zone_type": "cooling"     },
+        "stove_1":           { "is_wall": false, "product_id": "SKU-A01", "position_mm": { "x": 900,  "y": 2700, "z": 450  }, "dimensions_mm": { "width": 300, "depth": 300, "height": 400 }, "rotation_z_deg": 180, "anchor_wall": "north", "zone_type": "cooking"     },
+        "sink_1":            { "is_wall": false, "product_id": "SKU-S01", "position_mm": { "x": 1400, "y": 2725, "z": 450  }, "dimensions_mm": { "width": 300, "depth": 300, "height": 400 }, "rotation_z_deg": 180, "anchor_wall": "north", "zone_type": "cleaning"    },
+        "dishwasher_1":      { "is_wall": false, "product_id": "SKU-A03", "position_mm": { "x": 1900, "y": 2700, "z": 425  }, "dimensions_mm": { "width": 350, "depth": 350, "height": 500 }, "rotation_z_deg": 180, "anchor_wall": "north", "zone_type": "cleaning"    },
+        "tall_cabinet_1":    { "is_wall": false, "product_id": "SKU-C04", "position_mm": { "x": 2400, "y": 2700, "z": 1050 }, "dimensions_mm": { "width": 300, "depth": 300, "height": 500 }, "rotation_z_deg": 180, "anchor_wall": "north", "zone_type": "preparation" },
+        "corner_cabinet_1":  { "is_wall": false, "product_id": "SKU-C03", "position_mm": { "x": 2900, "y": 2550, "z": 450  }, "dimensions_mm": { "width": 450, "depth": 450, "height": 500 }, "rotation_z_deg": 180, "anchor_wall": "north", "zone_type": "preparation" },
+        "base_cabinet_1":    { "is_wall": false, "product_id": "SKU-C01", "position_mm": { "x": 3400, "y": 2700, "z": 450  }, "dimensions_mm": { "width": 300, "depth": 300, "height": 500 }, "rotation_z_deg": 180, "anchor_wall": "north", "zone_type": "preparation" },
+        "hood_1":            { "is_wall": false, "product_id": "SKU-A05", "position_mm": { "x": 900,  "y": 2750, "z": 2300 }, "dimensions_mm": { "width": 250, "depth": 250, "height": 300 }, "rotation_z_deg": 180, "anchor_wall": "north", "zone_type": "cooking"     }
+      },
+
+      "rationale": [
+        { "rule_id": "INPUT-CHECK", "text": "Every SKU'd item is rendered at its catalog footprint regardless of the JSON-supplied dimensions_mm." },
+        { "rule_id": "INPUT-CHECK", "text": "Red dashed outlines mark items whose declared dimensions disagree with the catalog (>5 mm tolerance)." },
+        { "rule_id": "INPUT-CHECK", "text": "Wrong input shrank every cabinet to ~300 mm so they would fit at 500 mm pitch; the real catalog widths cause unavoidable overlaps in the render." }
+      ]
+    },
+
+    {
+      "id": "variant-4-error-inflated",
+      "family": "wrong-input-demo (inflated dims)",
+      "score": 0.0,
+      "violations": [
+        { "rule_id": "DIM-ERROR", "text": "fridge_1 inflated to 3000×2000×2200, catalog SKU-A02 is 700×700×1800" },
+        { "rule_id": "DIM-ERROR", "text": "sink_1 inflated to 2400×1500×900, catalog SKU-S01 is 600×550×900" },
+        { "rule_id": "DIM-ERROR", "text": "stove_1 inflated to 1500×1500×1500, catalog SKU-A01 is 600×600×900" },
+        { "rule_id": "DIM-ERROR", "text": "tall_cabinet_1 inflated to 2000×1500×2400, catalog SKU-C04 is 600×600×2100" },
+        { "rule_id": "BOUNDS",    "text": "stove_1 centred at x=5000 — outside the 4200 mm room; catalog footprint x=[4700, 5300] pokes through the east wall" },
+        { "rule_id": "FLOATING",  "text": "fridge_1 floats in the centre of the floor; wrong input assumed a 3000 mm-wide claim would anchor it visually" },
+        { "rule_id": "LAYOUT-01", "text": "Sink not under window centre (catalog-real footprint exposes the off-window placement)" }
+      ],
+
+      "environment": {
+        "floor": {
+          "points": [
+            { "x": 0,    "y": 0,    "z": 0 },
+            { "x": 4200, "y": 0,    "z": 0 },
+            { "x": 4200, "y": 3000, "z": 0 },
+            { "x": 0,    "y": 3000, "z": 0 }
+          ]
+        },
+        "wall": [
+          { "name": "south_wall", "points": [ { "x": 0, "y": 0, "z": 0 }, { "x": 4200, "y": 0, "z": 0 }, { "x": 4200, "y": 0, "z": 2700 }, { "x": 0, "y": 0, "z": 2700 } ], "dimensions": { "height": 2700 }, "has_cabinets": false },
+          { "name": "north_wall", "points": [ { "x": 0, "y": 3000, "z": 0 }, { "x": 4200, "y": 3000, "z": 0 }, { "x": 4200, "y": 3000, "z": 2700 }, { "x": 0, "y": 3000, "z": 2700 } ], "dimensions": { "height": 2700 }, "has_cabinets": true },
+          { "name": "east_wall",  "points": [ { "x": 4200, "y": 0, "z": 0 }, { "x": 4200, "y": 3000, "z": 0 }, { "x": 4200, "y": 3000, "z": 2700 }, { "x": 4200, "y": 0, "z": 2700 } ], "dimensions": { "height": 2700 }, "has_cabinets": false },
+          { "name": "west_wall",  "points": [ { "x": 0, "y": 0, "z": 0 }, { "x": 0, "y": 3000, "z": 0 }, { "x": 0, "y": 3000, "z": 2700 }, { "x": 0, "y": 0, "z": 2700 } ], "dimensions": { "height": 2700 }, "has_cabinets": false }
+        ]
+      },
+
+      "layout": {
+        "south_wall": { "is_wall": true, "position_mm": { "x": 2100, "y": 0,    "z": 1350 }, "dimensions_mm": { "width": 4200, "depth": 100, "height": 2700 }, "rotation_z_deg": 0 },
+        "north_wall": { "is_wall": true, "position_mm": { "x": 2100, "y": 3000, "z": 1350 }, "dimensions_mm": { "width": 4200, "depth": 100, "height": 2700 }, "rotation_z_deg": 0 },
+        "east_wall":  { "is_wall": true, "position_mm": { "x": 4200, "y": 1500, "z": 1350 }, "dimensions_mm": { "width": 100,  "depth": 3000, "height": 2700 }, "rotation_z_deg": 0 },
+        "west_wall":  { "is_wall": true, "position_mm": { "x": 0,    "y": 1500, "z": 1350 }, "dimensions_mm": { "width": 100,  "depth": 3000, "height": 2700 }, "rotation_z_deg": 0 },
+
+        "south_door":   { "is_door": true,   "anchor_wall": "south", "position_mm": { "x": 1050, "y": 50,   "z": 1050 }, "dimensions_mm": { "width": 900,  "depth": 100, "height": 2100 }, "rotation_z_deg": 0 },
+        "north_window": { "is_window": true, "anchor_wall": "north", "position_mm": { "x": 2100, "y": 2950, "z": 1500 }, "dimensions_mm": { "width": 1200, "depth": 100, "height": 1200 }, "rotation_z_deg": 0 },
+
+        "fridge_1":       { "is_wall": false, "product_id": "SKU-A02", "position_mm": { "x": 1500, "y": 1500, "z": 900  }, "dimensions_mm": { "width": 3000, "depth": 2000, "height": 2200 }, "rotation_z_deg": 0,   "anchor_wall": "north", "zone_type": "cooling"     },
+        "sink_1":         { "is_wall": false, "product_id": "SKU-S01", "position_mm": { "x": 3000, "y": 2725, "z": 450  }, "dimensions_mm": { "width": 2400, "depth": 1500, "height": 900  }, "rotation_z_deg": 180, "anchor_wall": "north", "zone_type": "cleaning"    },
+        "stove_1":        { "is_wall": false, "product_id": "SKU-A01", "position_mm": { "x": 5000, "y": 2700, "z": 450  }, "dimensions_mm": { "width": 1500, "depth": 1500, "height": 1500 }, "rotation_z_deg": 180, "anchor_wall": "north", "zone_type": "cooking"     },
+        "tall_cabinet_1": { "is_wall": false, "product_id": "SKU-C04", "position_mm": { "x": 300,  "y": 1500, "z": 1050 }, "dimensions_mm": { "width": 2000, "depth": 1500, "height": 2400 }, "rotation_z_deg": 90,  "anchor_wall": "west",  "zone_type": "preparation" }
+      },
+
+      "rationale": [
+        { "rule_id": "INPUT-CHECK", "text": "Inflated declared dimensions are ignored; catalog footprints are drawn instead (red dashed outline = wrong input caught)." },
+        { "rule_id": "INPUT-CHECK", "text": "Wrong input inflated the fridge to 3000×2000 hoping to fill the floor; real 700×700 footprint floats in the middle, exposing the error." },
+        { "rule_id": "INPUT-CHECK", "text": "Stove placed at x=5000 because the team assumed a 1500 mm stove would still reach inside; renderer shows the 600 mm catalog box sitting outside the east wall." }
+        ]
+      }
+    ]
+  }
+  

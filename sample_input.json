@@ -1,0 +1,112 @@
+{
+  "environment": {
+    "floor": {
+      "points": [
+        { "x": 0,    "y": 0,    "z": 0 },
+        { "x": 4200, "y": 0,    "z": 0 },
+        { "x": 4200, "y": 3000, "z": 0 },
+        { "x": 0,    "y": 3000, "z": 0 }
+      ]
+    },
+
+    "wall": [
+      {
+        "name": "south_wall",
+        "anchor": "south",
+        "thickness_mm": 100,
+        "has_cabinets": false,
+        "dimensions": { "length_mm": 4200, "height": 2700 },
+        "points": [
+          { "x": 0,    "y": 0, "z": 0    },
+          { "x": 4200, "y": 0, "z": 0    },
+          { "x": 4200, "y": 0, "z": 2700 },
+          { "x": 0,    "y": 0, "z": 2700 }
+        ]
+      },
+      {
+        "name": "north_wall",
+        "anchor": "north",
+        "thickness_mm": 100,
+        "has_cabinets": true,
+        "dimensions": { "length_mm": 4200, "height": 2700 },
+        "points": [
+          { "x": 0,    "y": 3000, "z": 0    },
+          { "x": 4200, "y": 3000, "z": 0    },
+          { "x": 4200, "y": 3000, "z": 2700 },
+          { "x": 0,    "y": 3000, "z": 2700 }
+        ]
+      },
+      {
+        "name": "east_wall",
+        "anchor": "east",
+        "thickness_mm": 100,
+        "has_cabinets": true,
+        "dimensions": { "length_mm": 3000, "height": 2700 },
+        "points": [
+          { "x": 4200, "y": 0,    "z": 0    },
+          { "x": 4200, "y": 3000, "z": 0    },
+          { "x": 4200, "y": 3000, "z": 2700 },
+          { "x": 4200, "y": 0,    "z": 2700 }
+        ]
+      },
+      {
+        "name": "west_wall",
+        "anchor": "west",
+        "thickness_mm": 100,
+        "has_cabinets": false,
+        "dimensions": { "length_mm": 3000, "height": 2700 },
+        "points": [
+          { "x": 0, "y": 0,    "z": 0    },
+          { "x": 0, "y": 3000, "z": 0    },
+          { "x": 0, "y": 3000, "z": 2700 },
+          { "x": 0, "y": 0,    "z": 2700 }
+        ]
+      }
+    ],
+
+    "openings": [
+      {
+        "id":              "south_door",
+        "kind":            "door",
+        "wall":            "south",
+        "offset_mm":       600,
+        "width_mm":        900,
+        "height_mm":       2100,
+        "sill_mm":         0,
+        "hinge_side":      "left",
+        "swing_direction": "in",
+        "center_mm":       { "x": 1050, "y": 0,    "z": 1050 },
+        "dimensions_mm":   { "width": 900,  "depth": 100, "height": 2100 }
+      },
+      {
+        "id":              "north_window",
+        "kind":            "window",
+        "wall":            "north",
+        "offset_mm":       1500,
+        "width_mm":        1200,
+        "height_mm":       1200,
+        "sill_mm":         900,
+        "center_mm":       { "x": 2100, "y": 3000, "z": 1500 },
+        "dimensions_mm":   { "width": 1200, "depth": 100, "height": 1200 }
+      },
+      {
+        "id":              "east_window",
+        "kind":            "window",
+        "wall":            "east",
+        "offset_mm":       600,
+        "width_mm":        800,
+        "height_mm":       1200,
+        "sill_mm":         900,
+        "center_mm":       { "x": 4200, "y": 1000, "z": 1500 },
+        "dimensions_mm":   { "width": 800,  "depth": 100, "height": 1200 }
+      }
+    ]
+  },
+
+  "preferences": {
+    "budget_tier": "mid",
+    "must_have":   ["dishwasher", "hood"],
+    "avoid":       ["double_sink"],
+    "prompt":""
+  }
+}

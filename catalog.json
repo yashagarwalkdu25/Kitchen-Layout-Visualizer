@@ -1,0 +1,482 @@
+[
+    {
+      "id": "SKU-S01",
+      "type": "sink_single",
+      "category": "fixture",
+      "color": "#B8BCBE",
+      "width_mm": 600,
+      "depth_mm": 550,
+      "height_mm": 900,
+      "must_attach_to": "wall",
+      "style_tags": ["modern", "traditional"],
+      "price_tier": "mid",
+      "constraints": {
+        "front_clearance_mm": 1067,
+        "needs_water": true,
+        "needs_power": false
+      }
+    },
+    {
+      "id": "SKU-S02",
+      "type": "sink_double",
+      "category": "fixture",
+      "color": "#2F2F2F",
+      "width_mm": 900,
+      "depth_mm": 550,
+      "height_mm": 900,
+      "must_attach_to": "wall",
+      "style_tags": ["traditional"],
+      "price_tier": "high",
+      "constraints": {
+        "front_clearance_mm": 1067,
+        "needs_water": true,
+        "needs_power": false
+      }
+    },
+    {
+      "id": "SKU-A01",
+      "type": "stove_60",
+      "category": "appliance",
+      "color": "#C5C7C8",
+      "width_mm": 600,
+      "depth_mm": 600,
+      "height_mm": 900,
+      "must_attach_to": "wall",
+      "style_tags": ["modern"],
+      "price_tier": "mid",
+      "constraints": {
+        "front_clearance_mm": 1067,
+        "needs_water": false,
+        "needs_power": true
+      }
+    },
+    {
+      "id": "SKU-A02",
+      "type": "fridge_70",
+      "category": "appliance",
+      "color": "#F2F1ED",
+      "width_mm": 700,
+      "depth_mm": 700,
+      "height_mm": 1800,
+      "must_attach_to": "floor",
+      "style_tags": ["modern", "minimalist"],
+      "price_tier": "high",
+      "constraints": {
+        "front_clearance_mm": 1067,
+        "needs_water": false,
+        "needs_power": true
+      }
+    },
+    {
+      "id": "SKU-A03",
+      "type": "dishwasher_60",
+      "category": "appliance",
+      "color": "#C5C7C8",
+      "width_mm": 600,
+      "depth_mm": 600,
+      "height_mm": 850,
+      "must_attach_to": "wall",
+      "style_tags": ["modern", "traditional"],
+      "price_tier": "mid",
+      "constraints": {
+        "front_clearance_mm": 1067,
+        "needs_water": true,
+        "needs_power": true
+      }
+    },
+    {
+      "id": "SKU-A04",
+      "type": "oven_60_built_in",
+      "category": "appliance",
+      "color": "#2A2A2A",
+      "width_mm": 600,
+      "depth_mm": 600,
+      "height_mm": 600,
+      "must_attach_to": "wall",
+      "style_tags": ["modern"],
+      "price_tier": "high",
+      "constraints": {
+        "front_clearance_mm": 1067,
+        "needs_water": false,
+        "needs_power": true
+      }
+    },
+    {
+      "id": "SKU-A05",
+      "type": "hood_60",
+      "category": "appliance",
+      "color": "#B8BABC",
+      "width_mm": 600,
+      "depth_mm": 500,
+      "height_mm": 400,
+      "must_attach_to": "wall",
+      "style_tags": ["modern", "minimalist"],
+      "price_tier": "mid",
+      "constraints": {
+        "front_clearance_mm": 0,
+        "needs_water": false,
+        "needs_power": true
+      }
+    },
+    {
+      "id": "SKU-C01",
+      "type": "base_cabinet_600",
+      "category": "cabinet",
+      "color": "#C8A878",
+      "width_mm": 600,
+      "depth_mm": 600,
+      "height_mm": 900,
+      "must_attach_to": "wall",
+      "style_tags": ["modern", "traditional"],
+      "price_tier": "low",
+      "constraints": {
+        "front_clearance_mm": 914,
+        "needs_water": false,
+        "needs_power": false
+      }
+    },
+    {
+      "id": "SKU-C02",
+      "type": "base_cabinet_900",
+      "category": "cabinet",
+      "color": "#E8E2D5",
+      "width_mm": 900,
+      "depth_mm": 600,
+      "height_mm": 900,
+      "must_attach_to": "wall",
+      "style_tags": ["traditional"],
+      "price_tier": "low",
+      "constraints": {
+        "front_clearance_mm": 914,
+        "needs_water": false,
+        "needs_power": false
+      }
+    },
+    {
+      "id": "SKU-C03",
+      "type": "corner_cabinet_900",
+      "category": "cabinet",
+      "color": "#4A3328",
+      "width_mm": 900,
+      "depth_mm": 900,
+      "height_mm": 900,
+      "must_attach_to": "corner",
+      "style_tags": ["modern", "traditional"],
+      "price_tier": "mid",
+      "constraints": {
+        "front_clearance_mm": 914,
+        "needs_water": false,
+        "needs_power": false
+      }
+    },
+    {
+      "id": "SKU-C04",
+      "type": "tall_cabinet_600",
+      "category": "cabinet",
+      "color": "#DBC59A",
+      "width_mm": 600,
+      "depth_mm": 600,
+      "height_mm": 2100,
+      "must_attach_to": "wall",
+      "style_tags": ["modern", "minimalist"],
+      "price_tier": "mid",
+      "constraints": {
+        "front_clearance_mm": 914,
+        "needs_water": false,
+        "needs_power": false
+      }
+    },
+    {
+      "id": "SKU-C05",
+      "type": "wall_cabinet_600",
+      "category": "cabinet",
+      "color": "#C8A878",
+      "width_mm": 600,
+      "depth_mm": 350,
+      "height_mm": 700,
+      "must_attach_to": "wall",
+      "style_tags": ["modern", "traditional"],
+      "price_tier": "low",
+      "constraints": {
+        "front_clearance_mm": 0,
+        "needs_water": false,
+        "needs_power": false
+      }
+    },
+    {
+      "id": "SKU-C06",
+      "type": "wall_cabinet_900",
+      "category": "cabinet",
+      "color": "#E8E2D5",
+      "width_mm": 900,
+      "depth_mm": 350,
+      "height_mm": 700,
+      "must_attach_to": "wall",
+      "style_tags": ["traditional"],
+      "price_tier": "low",
+      "constraints": {
+        "front_clearance_mm": 0,
+        "needs_water": false,
+        "needs_power": false
+      }
+    },
+    {
+      "id": "SKU-I01",
+      "type": "island_1200",
+      "category": "cabinet",
+      "color": "#3D3D3D",
+      "width_mm": 1200,
+      "depth_mm": 900,
+      "height_mm": 900,
+      "must_attach_to": "floor",
+      "style_tags": ["modern"],
+      "price_tier": "high",
+      "constraints": {
+        "front_clearance_mm": 1067,
+        "needs_water": false,
+        "needs_power": false
+      }
+    },
+    {
+      "id": "SKU-F01",
+      "type": "tap_mixer",
+      "category": "fixture",
+      "color": "#D6D8DA",
+      "width_mm": 200,
+      "depth_mm": 200,
+      "height_mm": 300,
+      "must_attach_to": "wall",
+      "style_tags": ["modern", "traditional"],
+      "price_tier": "low",
+      "constraints": {
+        "front_clearance_mm": 0,
+        "needs_water": true,
+        "needs_power": false
+      }
+    },
+
+    {
+      "id": "SKU-C07",
+      "type": "base_cabinet_450",
+      "category": "cabinet",
+      "color": "#D4A574",
+      "width_mm": 450,
+      "depth_mm": 600,
+      "height_mm": 900,
+      "must_attach_to": "wall",
+      "style_tags": ["modern", "minimalist"],
+      "price_tier": "low",
+      "constraints": {
+        "front_clearance_mm": 914,
+        "needs_water": false,
+        "needs_power": false
+      }
+    },
+    {
+      "id": "SKU-C08",
+      "type": "base_cabinet_750",
+      "category": "cabinet",
+      "color": "#6F4E37",
+      "width_mm": 750,
+      "depth_mm": 600,
+      "height_mm": 900,
+      "must_attach_to": "wall",
+      "style_tags": ["traditional"],
+      "price_tier": "mid",
+      "constraints": {
+        "front_clearance_mm": 914,
+        "needs_water": false,
+        "needs_power": false
+      }
+    },
+    {
+      "id": "SKU-C09",
+      "type": "base_cabinet_1200",
+      "category": "cabinet",
+      "color": "#EDEDE9",
+      "width_mm": 1200,
+      "depth_mm": 600,
+      "height_mm": 900,
+      "must_attach_to": "wall",
+      "style_tags": ["modern", "minimalist"],
+      "price_tier": "mid",
+      "constraints": {
+        "front_clearance_mm": 914,
+        "needs_water": false,
+        "needs_power": false
+      }
+    },
+    {
+      "id": "SKU-C10",
+      "type": "base_drawer_600",
+      "category": "cabinet",
+      "color": "#2E2E2E",
+      "width_mm": 600,
+      "depth_mm": 600,
+      "height_mm": 900,
+      "must_attach_to": "wall",
+      "style_tags": ["modern"],
+      "price_tier": "mid",
+      "constraints": {
+        "front_clearance_mm": 914,
+        "needs_water": false,
+        "needs_power": false
+      }
+    },
+    {
+      "id": "SKU-C11",
+      "type": "base_blind_corner_900",
+      "category": "cabinet",
+      "color": "#1F3A5F",
+      "width_mm": 900,
+      "depth_mm": 900,
+      "height_mm": 900,
+      "must_attach_to": "corner",
+      "style_tags": ["modern", "traditional"],
+      "price_tier": "mid",
+      "constraints": {
+        "front_clearance_mm": 914,
+        "needs_water": false,
+        "needs_power": false
+      }
+    },
+
+    {
+      "id": "SKU-C12",
+      "type": "wall_cabinet_450",
+      "category": "cabinet",
+      "color": "#F5E6CA",
+      "width_mm": 450,
+      "depth_mm": 350,
+      "height_mm": 700,
+      "must_attach_to": "wall",
+      "style_tags": ["traditional", "minimalist"],
+      "price_tier": "low",
+      "constraints": {
+        "front_clearance_mm": 0,
+        "needs_water": false,
+        "needs_power": false
+      }
+    },
+    {
+      "id": "SKU-C13",
+      "type": "wall_cabinet_750",
+      "category": "cabinet",
+      "color": "#2F5233",
+      "width_mm": 750,
+      "depth_mm": 350,
+      "height_mm": 700,
+      "must_attach_to": "wall",
+      "style_tags": ["modern"],
+      "price_tier": "mid",
+      "constraints": {
+        "front_clearance_mm": 0,
+        "needs_water": false,
+        "needs_power": false
+      }
+    },
+    {
+      "id": "SKU-C14",
+      "type": "wall_cabinet_1200",
+      "category": "cabinet",
+      "color": "#B0B8BE",
+      "width_mm": 1200,
+      "depth_mm": 350,
+      "height_mm": 700,
+      "must_attach_to": "wall",
+      "style_tags": ["modern", "minimalist"],
+      "price_tier": "mid",
+      "constraints": {
+        "front_clearance_mm": 0,
+        "needs_water": false,
+        "needs_power": false
+      }
+    },
+    {
+      "id": "SKU-C15",
+      "type": "wall_open_shelf_600",
+      "category": "cabinet",
+      "color": "#9CAF88",
+      "width_mm": 600,
+      "depth_mm": 300,
+      "height_mm": 700,
+      "must_attach_to": "wall",
+      "style_tags": ["modern"],
+      "price_tier": "low",
+      "constraints": {
+        "front_clearance_mm": 0,
+        "needs_water": false,
+        "needs_power": false
+      }
+    },
+    {
+      "id": "SKU-C16",
+      "type": "wall_glass_cabinet_900",
+      "category": "cabinet",
+      "color": "#C76A4A",
+      "width_mm": 900,
+      "depth_mm": 350,
+      "height_mm": 700,
+      "must_attach_to": "wall",
+      "style_tags": ["traditional"],
+      "price_tier": "mid",
+      "constraints": {
+        "front_clearance_mm": 0,
+        "needs_water": false,
+        "needs_power": false
+      }
+    },
+
+    {
+      "id": "SKU-A06",
+      "type": "oven_75_built_in",
+      "category": "appliance",
+      "color": "#BFC1C2",
+      "width_mm": 750,
+      "depth_mm": 600,
+      "height_mm": 750,
+      "must_attach_to": "wall",
+      "style_tags": ["modern"],
+      "price_tier": "high",
+      "constraints": {
+        "front_clearance_mm": 1067,
+        "needs_water": false,
+        "needs_power": true
+      }
+    },
+    {
+      "id": "SKU-A07",
+      "type": "microwave_60_built_in",
+      "category": "appliance",
+      "color": "#3A3A3A",
+      "width_mm": 600,
+      "depth_mm": 400,
+      "height_mm": 400,
+      "must_attach_to": "wall",
+      "style_tags": ["modern", "minimalist"],
+      "price_tier": "mid",
+      "constraints": {
+        "front_clearance_mm": 0,
+        "needs_water": false,
+        "needs_power": true
+      }
+    },
+    {
+      "id": "SKU-A08",
+      "type": "dishwasher_45_slim",
+      "category": "appliance",
+      "color": "#BFC1C2",
+      "width_mm": 450,
+      "depth_mm": 600,
+      "height_mm": 850,
+      "must_attach_to": "wall",
+      "style_tags": ["modern", "minimalist"],
+      "price_tier": "mid",
+      "constraints": {
+        "front_clearance_mm": 1067,
+        "needs_water": true,
+        "needs_power": true
+      }
+    }
+  ]
+  
