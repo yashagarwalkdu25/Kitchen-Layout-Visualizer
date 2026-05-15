@@ -107,7 +107,7 @@
     "budget_tier": "mid",
     "must_have":   ["dishwasher", "hood"],
     "avoid":       ["double_sink"],
-    "prompt":"I want navy blue base cabinets",
-    "catalog": "./catalog.json"
+    "prompt":      "I want navy blue base cabinets",
+    "catalog":     "./catalog.json"
   }
 }

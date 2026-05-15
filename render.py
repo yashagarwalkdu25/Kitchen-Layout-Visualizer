@@ -2,13 +2,13 @@
 
 Usage
 -----
-    python render.py path/to/response.json
-    python render.py response.json --out-dir renders/
-    python render.py response.json --strict       # grader mode
-    python render.py response.json --show         # also pop GUI windows
-    python render.py response.json --2d-only      # skip 3D
-    python render.py response.json --3d-only      # skip 2D
-    python render.py response.json --catalog ./catalog.json
+    python render.py path/to/output.json
+    python render.py output.json --out-dir renders/
+    python render.py output.json --strict       # grader mode
+    python render.py output.json --show         # also pop GUI windows
+    python render.py output.json --2d-only      # skip 3D
+    python render.py output.json --3d-only      # skip 2D
+    python render.py output.json --catalog ./catalog.json
 
 Input contract
 --------------

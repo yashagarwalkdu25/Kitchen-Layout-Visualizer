@@ -1,0 +1,77 @@
+{
+  "environment": {
+    "floor": {
+      "points": [
+        { "x": 0,    "y": 0,    "z": 0 },
+        { "x": 3600, "y": 0,    "z": 0 },
+        { "x": 3600, "y": 3200, "z": 0 },
+        { "x": 0,    "y": 3200, "z": 0 }
+      ]
+    },
+
+    "wall": [
+      {
+        "name": "south_wall",
+        "anchor": "south",
+        "thickness_mm": 100,
+        "has_cabinets": false,
+        "dimensions": { "length_mm": 3600, "height": 2700 },
+        "points": [
+          { "x": 0,    "y": 0, "z": 0    },
+          { "x": 3600, "y": 0, "z": 0    },
+          { "x": 3600, "y": 0, "z": 2700 },
+          { "x": 0,    "y": 0, "z": 2700 }
+        ]
+      },
+      {
+        "name": "north_wall",
+        "anchor": "north",
+        "thickness_mm": 100,
+        "has_cabinets": true,
+        "dimensions": { "length_mm": 3600, "height": 2700 },
+        "points": [
+          { "x": 0,    "y": 3200, "z": 0    },
+          { "x": 3600, "y": 3200, "z": 0    },
+          { "x": 3600, "y": 3200, "z": 2700 },
+          { "x": 0,    "y": 3200, "z": 2700 }
+        ]
+      },
+      {
+        "name": "east_wall",
+        "anchor": "east",
+        "thickness_mm": 100,
+        "has_cabinets": true,
+        "dimensions": { "length_mm": 3200, "height": 2700 },
+        "points": [
+          { "x": 3600, "y": 0,    "z": 0    },
+          { "x": 3600, "y": 3200, "z": 0    },
+          { "x": 3600, "y": 3200, "z": 2700 },
+          { "x": 3600, "y": 0,    "z": 2700 }
+        ]
+      },
+      {
+        "name": "west_wall",
+        "anchor": "west",
+        "thickness_mm": 100,
+        "has_cabinets": false,
+        "dimensions": { "length_mm": 3200, "height": 2700 },
+        "points": [
+          { "x": 0, "y": 0,    "z": 0    },
+          { "x": 0, "y": 3200, "z": 0    },
+          { "x": 0, "y": 3200, "z": 2700 },
+          { "x": 0, "y": 0,    "z": 2700 }
+        ]
+      }
+    ],
+
+    "openings": []
+  },
+
+  "preferences": {
+    "budget_tier": "high",
+    "must_have":   ["dishwasher", "hood"],
+    "avoid":       ["single_sink"],
+    "prompt":      "I want navy blue base cabinets",
+    "catalog":     "./catalog.json"
+  }
+}

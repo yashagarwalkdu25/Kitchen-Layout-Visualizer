@@ -1,16 +1,31 @@
 # Kitchen Layout Visualizer
 
-Renders AI-generated kitchen furniture layouts from a JSON response envelope to PNG images — both a 2D top-down floor plan with grid and a 3D isometric view.
+Renders AI-generated kitchen furniture layouts from a JSON output envelope to PNG images — both a 2D top-down floor plan with grid and a 3D isometric view.
 
 ## Files
 
 | File | Role |
 |------|------|
-| `render.py` | CLI entry point — reads a response JSON, renders every variant |
+| `render.py` | CLI entry point — reads an output JSON, renders every variant |
 | `layout.py` | `LayoutVisualizer` class — all drawing logic (2D + 3D) |
 | `catalog.json` | Product catalog — SKUs with canonical dimensions, colors, constraints |
 | `sample_input.json` | Example input to send to the layout AI (room + preferences) |
-| `output.json` | Example response envelope with 5 layout variants |
+| `output.json` | Example output envelope with 5 layout variants |
+
+## Setup
+
+```bash
+# 1. Clone the repository
+git clone <repo-url>
+
+# 2. Enter the project directory
+cd PS
+
+# 3. Create and activate a virtual environment
+python -m venv .venv
+source .venv/bin/activate      # macOS / Linux
+# .venv\Scripts\activate       # Windows
+```
 
 ## Prerequisites
 
@@ -99,9 +114,9 @@ Describes the room and user preferences. Send this to your layout AI to generate
 
 All coordinates are in **millimetres**. The origin is the south-west floor corner.
 
-## Output / response format (`output.json`)
+## Output format (`output.json`)
 
-The visualizer expects the response envelope described below. Each entry in `layouts` is one variant.
+The visualizer expects the output envelope described below. Each entry in `layouts` is one variant.
 
 ```json
 {
